@@ -1,102 +1,106 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informasi - Pendidikan Indonesia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <title>Learn Backend Development</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="bg-primary text-white py-4">
-        <div class="container">
-            <h1>Informasi Pendidikan</h1>
-            <p class="lead">Sistem Pendidikan di Indonesia</p>
-        </div>
+    <header>
+        <h1>Backend Development Hub</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">Backend Dev</div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="content.html">Informasi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="feedback.html">Feedback</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="content.html">Learn</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main class="container my-4">
-        <div class="row">
-            <div class="col-md-8">
-                <article>
-                    <h2>Sistem Pendidikan di Indonesia</h2>
-                    <section class="mb-4">
-                        <h3>Pendidikan Dasar</h3>
-                        <p>Pendidikan dasar di Indonesia terdiri dari:</p>
-                        <ul>
-                            <li>Sekolah Dasar (SD) - 6 tahun</li>
-                            <li>Sekolah Menengah Pertama (SMP) - 3 tahun</li>
-                        </ul>
-                        <p>Program wajib belajar 9 tahun mencakup pendidikan SD dan SMP.</p>
-                    </section>
-
-                    <section class="mb-4">
-                        <h3>Pendidikan Menengah</h3>
-                        <p>Pendidikan menengah terdiri dari:</p>
-                        <ul>
-                            <li>Sekolah Menengah Atas (SMA) - 3 tahun</li>
-                            <li>Sekolah Menengah Kejuruan (SMK) - 3 tahun</li>
-                        </ul>
-                    </section>
-
-                    <section class="mb-4">
-                        <h3>Pendidikan Tinggi</h3>
-                        <p>Pendidikan tinggi meliputi:</p>
-                        <ul>
-                            <li>Program Diploma (D1-D4)</li>
-                            <li>Program Sarjana (S1)</li>
-                            <li>Program Magister (S2)</li>
-                            <li>Program Doktor (S3)</li>
-                        </ul>
-                    </section>
-                </article>
+    <main class="content-page">
+        <h2>Backend Technologies</h2>
+        
+        <div class="tech-grid">
+            <div class="tech-card" id="python">
+                <div class="tech-card-image">
+                    <img src="images/python-logo.png" alt="Python Logo">
+                </div>
+                <div class="tech-card-content">
+                    <h4>Python</h4>
+                    <p>Popular for web frameworks like Django and Flask</p>
+                </div>
             </div>
+            
+            <div class="tech-card" id="nodejs">
+                <div class="tech-card-image">
+                    <img src="images/nodejs-logo.png" alt="Node.js Logo">
+                </div>
+                <div class="tech-card-content">
+                    <h4>Node.js</h4>
+                    <p>JavaScript runtime for server-side development</p>
+                </div>
+            </div>
+            
+            <div class="tech-card" id="java">
+                <div class="tech-card-image">
+                    <img src="images/java-logo.png" alt="Java Logo">
+                </div>
+                <div class="tech-card-content">
+                    <h4>Java</h4>
+                    <p>Enterprise-level backend development with Spring</p>
+                </div>
+            </div>
+        </div>
 
-            <aside class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h4>Statistik Pendidikan</h4>
+        <section class="tech-section">
+            <h3>Databases</h3>
+            <div class="tech-grid">
+                <div class="tech-card" id="mysql">
+                    <div class="tech-card-image">
+                        <img src="images/mysql-logo.png" alt="MySQL Logo">
                     </div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li class="mb-2">Jumlah Sekolah: 250,000+</li>
-                            <li class="mb-2">Jumlah Siswa: 45 juta+</li>
-                            <li class="mb-2">Jumlah Guru: 3 juta+</li>
-                        </ul>
+                    <div class="tech-card-content">
+                        <h4>MySQL</h4>
+                        <p>Popular for web frameworks like Django and Flask</p>
                     </div>
                 </div>
-            </aside>
-        </div>
+                
+                <div class="tech-card" id="mongodb">
+                    <div class="tech-card-image">
+                        <img src="images/mongodb-logo.png" alt="MongoDB Logo">
+                    </div>
+                    <div class="tech-card-content">
+                        <h4>MongoDB</h4>
+                        <p>Enterprise-level backend development with Spring</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <p>Learning Labs 2024 L0124103 Kevin Ananda Putra</p>
-        </div>
+    <aside>
+        <h3>Learning Resources</h3>
+        <ul>
+            <li><a href="#">Online Courses</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Books</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Learning Labs 2024 L0124103 Kevin Ananda Putra</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
