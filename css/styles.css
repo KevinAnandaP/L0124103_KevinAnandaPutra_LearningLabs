@@ -1,17 +1,17 @@
-/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-/* Header styles */
 header {
     background-color: #2c3e50;
     color: white;
@@ -39,7 +39,6 @@ nav a:hover, nav a.active {
     background-color: #34495e;
 }
 
-/* Main content styles */
 main {
     grid-area: main;
     padding: 2rem;
@@ -65,13 +64,13 @@ main {
     border: 1px solid #ddd;
     border-radius: 8px;
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
 }
 
-/* Aside styles */
 aside {
     grid-area: aside;
     padding: 1rem;
@@ -93,7 +92,6 @@ aside a {
     padding: 0.5rem 0;
 }
 
-/* Footer styles */
 footer {
     grid-area: footer;
     background-color: #2c3e50;
@@ -102,7 +100,6 @@ footer {
     padding: 1rem;
 }
 
-/* Form styles */
 .feedback-form {
     max-width: 600px;
     margin: 0 auto;
@@ -192,7 +189,6 @@ header h1 {
     background-color: #2c3e50;
 }
 
-/* Mobile menu button */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -211,7 +207,6 @@ header h1 {
     transition: all 0.3s ease;
 }
 
-/* Layout grid yang diperbarui */
 .page-container {
     display: grid;
     grid-template-areas:
@@ -260,7 +255,7 @@ header h1 {
 .tech-card {
     background: white;
     border-radius: 8px;
-    overflow: hidden; /* Penting untuk gambar yang mungkin lebih besar */
+    overflow: hidden; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid #eee;
@@ -270,9 +265,9 @@ header h1 {
 
 .tech-card-image {
     width: 100%;
-    height: 160px; /* Sesuaikan tinggi sesuai kebutuhan */
+    height: 160px; 
     overflow: hidden;
-    background-color: #f8f9fa; /* Background fallback jika gambar belum load */
+    background-color: #f8f9fa; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,17 +277,17 @@ header h1 {
 .tech-card-image img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Menjaga aspek ratio gambar */
+    object-fit: contain; 
     transition: transform 0.3s ease;
 }
 
 .tech-card:hover .tech-card-image img {
-    transform: scale(1.1); /* Efek zoom saat hover */
+    transform: scale(1.1); 
 }
 
 .tech-card-content {
     padding: 1.5rem;
-    flex-grow: 1; /* Memastikan konten mengisi ruang yang tersisa */
+    flex-grow: 1; 
 }
 
 .tech-card h4 {
@@ -306,7 +301,6 @@ header h1 {
     line-height: 1.6;
 }
 
-/* Style spesifik untuk setiap card (optional) */
 #go .tech-card-image {
     background-color: #4ca7f75d; 
 }
@@ -327,7 +321,6 @@ header h1 {
     background-color: #58963674;
 }
 
-/* Responsive styles yang diperbarui */
 @media (max-width: 768px) {
     .nav-container {
         position: relative;
