@@ -307,24 +307,24 @@ header h1 {
 }
 
 /* Style spesifik untuk setiap card (optional) */
-#python .tech-card-image {
-    background-color: #f0f8ff; /* Warna background yang sesuai dengan brand Python */
+#go .tech-card-image {
+    background-color: #4ca7f75d; 
 }
 
 #nodejs .tech-card-image {
-    background-color: #f3f8f3; /* Warna background yang sesuai dengan brand Node.js */
+    background-color: #1f9a1f78; 
 }
 
 #java .tech-card-image {
-    background-color: #fff5e6; /* Warna background yang sesuai dengan brand Java */
+    background-color: #efa63970; 
 }
 
 #mysql .tech-card-image{
-    background-color: #00758F;
+    background-color: #00758f5a;
 }
 
 #mongodb .tech-card-image{
-    background-color: #4DB33D;
+    background-color: #58963674;
 }
 
 /* Responsive styles yang diperbarui */
